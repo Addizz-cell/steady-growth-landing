@@ -1,4 +1,3 @@
-
 /* Base Styles */
 @tailwind base;
 @tailwind components;
@@ -209,6 +208,18 @@ button:disabled {
 
 .tab-pane.hidden {
   display: none;
+}
+
+/* Mobile Menu Styles - Updated */
+#mobile-menu .px-4.py-3.space-y-3 {
+  display: flex;
+  flex-direction: column;
+}
+
+#mobile-menu a {
+  display: block;
+  width: 100%;
+  padding: 10px 0;
 }
 
 /* Media Queries */
