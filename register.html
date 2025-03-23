@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register - Steady Growth Insight</title>
+    <meta name="description" content="Create your Steady Growth Insight account" />
+    <meta name="author" content="Steady Growth Insight" />
+    <meta property="og:image" content="/og-image.png" />
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body class="bg-003049 text-white">
+    <div id="app">
+      <div class="min-h-screen bg-003049 text-white py-16 px-4">
+        <div class="max-w-md mx-auto">
+          <div class="card">
+            <div class="text-center">
+              <div class="mx-auto bg-e73667 rounded-full p-3 w-14 h-14 flex items-center justify-center mb-4">
+                <svg class="h-8 w-8 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+              </div>
+              <h1 class="text-2xl font-bold">Create Your Account</h1>
+              <p class="text-white-70 mb-6">
+                Join Steady Growth Insight and start investing today
+              </p>
+            </div>
+            
+            <form id="register-form">
+              <div class="space-y-4">
+                <div class="space-y-2">
+                  <label class="text-sm font-medium" for="fullName">
+                    Full Name
+                  </label>
+                  <input
+                    id="fullName"
+                    name="fullName"
+                    type="text"
+                    required
+                    class="w-full bg-002439 border border-white-10 text-white px-3 py-2 rounded"
+                  />
+                </div>
+                <div class="space-y-2">
+                  <label class="text-sm font-medium" for="email">
+                    Email
+                  </label>
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    required
+                    class="w-full bg-002439 border border-white-10 text-white px-3 py-2 rounded"
+                  />
+                </div>
+                <div class="space-y-2">
+                  <label class="text-sm font-medium" for="password">
+                    Password
+                  </label>
+                  <input
+                    id="password"
+                    name="password"
+                    type="password"
+                    required
+                    class="w-full bg-002439 border border-white-10 text-white px-3 py-2 rounded"
+                  />
+                </div>
+                <div class="space-y-2">
+                  <label class="text-sm font-medium" for="confirmPassword">
+                    Confirm Password
+                  </label>
+                  <input
+                    id="confirmPassword"
+                    name="confirmPassword"
+                    type="password"
+                    required
+                    class="w-full bg-002439 border border-white-10 text-white px-3 py-2 rounded"
+                  />
+                </div>
+                <button 
+                  type="submit"
+                  id="register-button"
+                  class="w-full bg-e73667 hover-bg-e73667-90 text-white hover-translate-y-negative-2px transition-transform px-4 py-2 rounded"
+                >
+                  Create Account
+                  <svg class="ml-2 h-4 w-4 inline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </button>
+              </div>
+            </form>
+            
+            <div class="flex justify-center mt-6">
+              <p class="text-white-70 text-sm">
+                Already have an account?
+                <a href="login.html" class="text-e73667 hover-underline">
+                  Log in
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="register.js"></script>
+  </body>
+</html>

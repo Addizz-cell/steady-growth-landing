@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Legal Disclaimer - Steady Growth Insight</title>
+    <meta name="description" content="Legal disclaimer for Steady Growth Insight services" />
+    <meta name="author" content="Steady Growth Insight" />
+    <meta property="og:image" content="/og-image.png" />
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body class="bg-003049 text-white">
+    <div id="app">
+      <div class="min-h-screen bg-003049 text-white py-12 px-4 md-px-8">
+        <div class="max-w-4xl mx-auto">
+          <div class="mb-8">
+            <a href="index.html">
+              <button class="text-white hover-text-e73667 p-0 mb-4 -ml-2 bg-transparent border-0 flex items-center">
+                <svg class="mr-2 h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="19" y1="12" x2="5" y2="12"></line>
+                  <polyline points="12 19 5 12 12 5"></polyline>
+                </svg>
+                Back to Home
+              </button>
+            </a>
+            <h1 class="text-3xl md-text-4xl font-bold mb-4">Legal Disclaimer</h1>
+            <p class="text-white-70" id="last-updated">Last updated: January 1, 2023</p>
+          </div>
+          
+          <div class="space-y-8">
+            <section>
+              <h2 class="text-xl font-semibold mb-3">Risk Disclosure</h2>
+              <p class="text-white-80 mb-3">
+                Trading foreign exchange (forex) and binary options on margin carries a high level of risk and may not be suitable for all investors. The high degree of leverage can work against you as well as for you. Before deciding to invest in forex or binary options, you should carefully consider your investment objectives, level of experience, and risk appetite.
+              </p>
+              <p class="text-white-80 mb-3">
+                The possibility exists that you could sustain a loss of some or all of your initial investment and therefore you should not invest money that you cannot afford to lose. You should be aware of all the risks associated with forex and binary options trading, and seek advice from an independent financial advisor if you have any doubts.
+              </p>
+            </section>
+            
+            <section>
+              <h2 class="text-xl font-semibold mb-3">Investment Performance</h2>
+              <p class="text-white-80 mb-3">
+                Past performance is not indicative of future results. No representation is being made that any account will or is likely to achieve profits or losses similar to those discussed on this website. The past performance of any trading system or methodology is not necessarily indicative of future results.
+              </p>
+            </section>
+            
+            <section>
+              <h2 class="text-xl font-semibold mb-3">Financial Advice Disclaimer</h2>
+              <p class="text-white-80 mb-3">
+                The information provided by Steady Growth Insight is for general informational purposes only and is not intended to be a substitute for professional financial advice. Always seek the advice of a qualified financial advisor regarding any questions you may have about an investment decision.
+              </p>
+              <p class="text-white-80 mb-3">
+                Steady Growth Insight is not a registered investment advisor. We do not provide personalized investment advice tailored to our users' individual financial situations and investment objectives. The information we provide is general in nature and may not be appropriate for all investors.
+              </p>
+            </section>
+            
+            <section>
+              <h2 class="text-xl font-semibold mb-3">Third-Party Links</h2>
+              <p class="text-white-80 mb-3">
+                Our website may contain links to third-party websites or services that are not owned or controlled by Steady Growth Insight. We have no control over, and assume no responsibility for, the content, privacy policies, or practices of any third-party websites or services.
+              </p>
+              <p class="text-white-80 mb-3">
+                You acknowledge and agree that Steady Growth Insight shall not be responsible or liable, directly or indirectly, for any damage or loss caused or alleged to be caused by or in connection with the use of or reliance on any such content, goods, or services available on or through any such websites or services.
+              </p>
+            </section>
+            
+            <section>
+              <h2 class="text-xl font-semibold mb-3">Regulatory Compliance</h2>
+              <p class="text-white-80 mb-3">
+                Investment products and services are not available in all jurisdictions or to all persons. Being a user of this website does not constitute an offer or solicitation to buy or sell investments in jurisdictions where it is not authorized.
+              </p>
+              <p class="text-white-80 mb-3">
+                It is the responsibility of the visitor to this website to ascertain the terms of and comply with any local law or regulation to which they are subject. You agree to comply with all applicable laws and regulations regarding your use of our services.
+              </p>
+            </section>
+            
+            <section>
+              <h2 class="text-xl font-semibold mb-3">Accuracy of Information</h2>
+              <p class="text-white-80 mb-3">
+                While we strive to provide accurate and up-to-date information on this website, we make no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability, or availability of the information contained on the website for any purpose.
+              </p>
+              <p class="text-white-80 mb-3">
+                Any reliance you place on such information is therefore strictly at your own risk. We reserve the right to correct any errors or omissions in our content.
+              </p>
+            </section>
+            
+            <section>
+              <h2 class="text-xl font-semibold mb-3">Contact Information</h2>
+              <p class="text-white-80 mb-3">
+                If you have any questions about this disclaimer, please contact us at:
+              </p>
+              <p class="text-white-80">
+                contact@steadygrowthinsight.com<br />
+                +1 (555) 123-4567<br />
+                123 Investment Avenue, Financial District<br />
+                New York, NY 10001
+              </p>
+            </section>
+          </div>
+          
+          <div class="mt-12 pt-8 border-t border-white-10">
+            <p class="text-white-60 text-sm" id="copyright">
+              © 2023 Steady Growth Insight. All rights reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Update the last updated date
+      document.addEventListener('DOMContentLoaded', function() {
+        const today = new Date();
+        document.getElementById('last-updated').textContent = 'Last updated: ' + today.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
+        
+        // Update copyright year
+        const currentYear = new Date().getFullYear();
+        document.getElementById('copyright').textContent = `© ${currentYear} Steady Growth Insight. All rights reserved.`;
+      });
+    </script>
+  </body>
+</html>
