@@ -112,91 +112,23 @@ document.addEventListener('DOMContentLoaded', function() {
     testimonialsGrid.appendChild(testimonialCard);
   });
 
-  // Market prices section
-  const marketPrices = document.getElementById('market-prices');
-  marketPrices.innerHTML = `
-    <div class="max-w-6xl mx-auto">
-      <div class="text-center mb-16">
-        <h2 class="text-3xl md-text-4xl font-bold mb-6">Real-Time Market Insights</h2>
-        <p class="text-lg text-white-80 max-w-2xl mx-auto">
-          Stay updated with the latest market trends to make informed investment decisions.
-        </p>
-      </div>
+  // Tab functionality for market prices
+  const tabButtons = document.querySelectorAll('.tab-button');
+  const tabPanes = document.querySelectorAll('.tab-pane');
+
+  tabButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const tabId = button.getAttribute('data-tab');
       
-      <div class="grid grid-cols-1 md-grid-cols-3 gap-6">
-        <div class="card">
-          <h3 class="card-title flex items-center">
-            <svg class="h-5 w-5 mr-2 text-e73667" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <line x1="12" y1="1" x2="12" y2="23"></line>
-              <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
-            </svg>
-            Forex
-          </h3>
-          <div class="space-y-4 mt-4">
-            <div class="flex justify-between items-center">
-              <span>EUR/USD</span>
-              <span class="text-green-500">1.0921 <span class="text-xs">+0.05%</span></span>
-            </div>
-            <div class="flex justify-between items-center">
-              <span>GBP/USD</span>
-              <span class="text-red-500">1.2689 <span class="text-xs">-0.12%</span></span>
-            </div>
-            <div class="flex justify-between items-center">
-              <span>USD/JPY</span>
-              <span class="text-green-500">149.62 <span class="text-xs">+0.23%</span></span>
-            </div>
-          </div>
-        </div>
-        
-        <div class="card">
-          <h3 class="card-title flex items-center">
-            <svg class="h-5 w-5 mr-2 text-e73667" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
-              <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
-            </svg>
-            Commodities
-          </h3>
-          <div class="space-y-4 mt-4">
-            <div class="flex justify-between items-center">
-              <span>Gold</span>
-              <span class="text-green-500">$2,317.30 <span class="text-xs">+0.45%</span></span>
-            </div>
-            <div class="flex justify-between items-center">
-              <span>Silver</span>
-              <span class="text-green-500">$27.15 <span class="text-xs">+0.89%</span></span>
-            </div>
-            <div class="flex justify-between items-center">
-              <span>Crude Oil</span>
-              <span class="text-red-500">$82.69 <span class="text-xs">-0.31%</span></span>
-            </div>
-          </div>
-        </div>
-        
-        <div class="card">
-          <h3 class="card-title flex items-center">
-            <svg class="h-5 w-5 mr-2 text-e73667" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-            </svg>
-            Crypto
-          </h3>
-          <div class="space-y-4 mt-4">
-            <div class="flex justify-between items-center">
-              <span>Bitcoin</span>
-              <span class="text-red-500">$63,281 <span class="text-xs">-1.25%</span></span>
-            </div>
-            <div class="flex justify-between items-center">
-              <span>Ethereum</span>
-              <span class="text-red-500">$3,084 <span class="text-xs">-2.13%</span></span>
-            </div>
-            <div class="flex justify-between items-center">
-              <span>Solana</span>
-              <span class="text-green-500">$149.12 <span class="text-xs">+3.46%</span></span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  `;
+      // Remove active class from all buttons and panes
+      tabButtons.forEach(btn => btn.classList.remove('active', 'bg-e73667', 'text-white'));
+      tabPanes.forEach(pane => pane.classList.add('hidden'));
+      
+      // Add active class to current button and pane
+      button.classList.add('active', 'bg-e73667', 'text-white');
+      document.getElementById(`${tabId}-tab`).classList.remove('hidden');
+    });
+  });
 
   // Helper function to get SVG path for icons
   function getIconPath(iconName) {

@@ -135,7 +135,732 @@
 
         <!-- Market Prices Section -->
         <div id="market-prices" class="w-full py-16 px-4 md-px-8">
-          <!-- Market prices content will be dynamically inserted by JavaScript -->
+          <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+              <h2 class="text-3xl md-text-4xl font-bold mb-6">Real-Time Market Insights</h2>
+              <p class="text-lg text-white-80 max-w-2xl mx-auto">
+                Stay updated with the latest market trends to make informed investment decisions.
+              </p>
+            </div>
+            
+            <div class="market-tabs">
+              <div class="tab-controls flex justify-center mb-8">
+                <button class="tab-button active px-6 py-2 mx-2 rounded-full bg-white-10 hover:bg-white-20 transition-colors" data-tab="forex">Forex</button>
+                <button class="tab-button px-6 py-2 mx-2 rounded-full bg-white-10 hover:bg-white-20 transition-colors" data-tab="crypto">Crypto</button>
+                <button class="tab-button px-6 py-2 mx-2 rounded-full bg-white-10 hover:bg-white-20 transition-colors" data-tab="commodities">Commodities</button>
+              </div>
+              
+              <div class="tab-content">
+                <!-- Forex Tab Content -->
+                <div class="tab-pane active" id="forex-tab">
+                  <div class="grid grid-cols-1 md-grid-cols-2 lg-grid-cols-3 gap-6">
+                    <div class="card hover:shadow-lg transition-shadow duration-300">
+                      <div class="flex justify-between items-center mb-4">
+                        <h3 class="font-bold">Major Pairs</h3>
+                        <span class="text-xs text-white-70">Updated: <span class="font-semibold">12:35 GMT</span></span>
+                      </div>
+                      <div class="space-y-4">
+                        <div class="flex justify-between items-center py-2 border-b border-white-10">
+                          <div class="flex items-center">
+                            <div class="h-8 w-8 rounded-full bg-white-10 flex items-center justify-center mr-3">
+                              <span class="font-semibold text-xs">EUR</span>
+                            </div>
+                            <span>EUR/USD</span>
+                          </div>
+                          <div class="text-right">
+                            <div class="font-medium">1.0921</div>
+                            <div class="flex items-center text-green-400 text-xs">
+                              <svg class="w-4 h-4 mr-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
+                              +0.05%
+                            </div>
+                          </div>
+                        </div>
+                        <div class="flex justify-between items-center py-2 border-b border-white-10">
+                          <div class="flex items-center">
+                            <div class="h-8 w-8 rounded-full bg-white-10 flex items-center justify-center mr-3">
+                              <span class="font-semibold text-xs">GBP</span>
+                            </div>
+                            <span>GBP/USD</span>
+                          </div>
+                          <div class="text-right">
+                            <div class="font-medium">1.2689</div>
+                            <div class="flex items-center text-red-400 text-xs">
+                              <svg class="w-4 h-4 mr-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 18 13.5 8.5 8.5 13.5 1 6"></polyline><polyline points="17 18 23 18 23 12"></polyline></svg>
+                              -0.12%
+                            </div>
+                          </div>
+                        </div>
+                        <div class="flex justify-between items-center py-2 border-b border-white-10">
+                          <div class="flex items-center">
+                            <div class="h-8 w-8 rounded-full bg-white-10 flex items-center justify-center mr-3">
+                              <span class="font-semibold text-xs">JPY</span>
+                            </div>
+                            <span>USD/JPY</span>
+                          </div>
+                          <div class="text-right">
+                            <div class="font-medium">149.62</div>
+                            <div class="flex items-center text-green-400 text-xs">
+                              <svg class="w-4 h-4 mr-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
+                              +0.23%
+                            </div>
+                          </div>
+                        </div>
+                        <div class="flex justify-between items-center py-2 border-b border-white-10">
+                          <div class="flex items-center">
+                            <div class="h-8 w-8 rounded-full bg-white-10 flex items-center justify-center mr-3">
+                              <span class="font-semibold text-xs">AUD</span>
+                            </div>
+                            <span>AUD/USD</span>
+                          </div>
+                          <div class="text-right">
+                            <div class="font-medium">0.6542</div>
+                            <div class="flex items-center text-green-400 text-xs">
+                              <svg class="w-4 h-4 mr-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
+                              +0.18%
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="card hover:shadow-lg transition-shadow duration-300">
+                      <div class="flex justify-between items-center mb-4">
+                        <h3 class="font-bold">Cross Pairs</h3>
+                        <span class="text-xs text-white-70">Updated: <span class="font-semibold">12:35 GMT</span></span>
+                      </div>
+                      <div class="space-y-4">
+                        <div class="flex justify-between items-center py-2 border-b border-white-10">
+                          <div class="flex items-center">
+                            <div class="h-8 w-8 rounded-full bg-white-10 flex items-center justify-center mr-3">
+                              <span class="font-semibold text-xs">EUR</span>
+                            </div>
+                            <span>EUR/GBP</span>
+                          </div>
+                          <div class="text-right">
+                            <div class="font-medium">0.8609</div>
+                            <div class="flex items-center text-green-400 text-xs">
+                              <svg class="w-4 h-4 mr-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
+                              +0.11%
+                            </div>
+                          </div>
+                        </div>
+                        <div class="flex justify-between items-center py-2 border-b border-white-10">
+                          <div class="flex items-center">
+                            <div class="h-8 w-8 rounded-full bg-white-10 flex items-center justify-center mr-3">
+                              <span class="font-semibold text-xs">EUR</span>
+                            </div>
+                            <span>EUR/JPY</span>
+                          </div>
+                          <div class="text-right">
+                            <div class="font-medium">163.40</div>
+                            <div class="flex items-center text-red-400 text-xs">
+                              <svg class="w-4 h-4 mr-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 18 13.5 8.5 8.5 13.5 1 6"></polyline><polyline points="17 18 23 18 23 12"></polyline></svg>
+                              -0.08%
+                            </div>
+                          </div>
+                        </div>
+                        <div class="flex justify-between items-center py-2 border-b border-white-10">
+                          <div class="flex items-center">
+                            <div class="h-8 w-8 rounded-full bg-white-10 flex items-center justify-center mr-3">
+                              <span class="font-semibold text-xs">GBP</span>
+                            </div>
+                            <span>GBP/JPY</span>
+                          </div>
+                          <div class="text-right">
+                            <div class="font-medium">189.85</div>
+                            <div class="flex items-center text-green-400 text-xs">
+                              <svg class="w-4 h-4 mr-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
+                              +0.34%
+                            </div>
+                          </div>
+                        </div>
+                        <div class="flex justify-between items-center py-2 border-b border-white-10">
+                          <div class="flex items-center">
+                            <div class="h-8 w-8 rounded-full bg-white-10 flex items-center justify-center mr-3">
+                              <span class="font-semibold text-xs">AUD</span>
+                            </div>
+                            <span>AUD/JPY</span>
+                          </div>
+                          <div class="text-right">
+                            <div class="font-medium">97.93</div>
+                            <div class="flex items-center text-red-400 text-xs">
+                              <svg class="w-4 h-4 mr-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 18 13.5 8.5 8.5 13.5 1 6"></polyline><polyline points="17 18 23 18 23 12"></polyline></svg>
+                              -0.15%
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="card hover:shadow-lg transition-shadow duration-300">
+                      <div class="flex justify-between items-center mb-4">
+                        <h3 class="font-bold">Exotic Pairs</h3>
+                        <span class="text-xs text-white-70">Updated: <span class="font-semibold">12:35 GMT</span></span>
+                      </div>
+                      <div class="space-y-4">
+                        <div class="flex justify-between items-center py-2 border-b border-white-10">
+                          <div class="flex items-center">
+                            <div class="h-8 w-8 rounded-full bg-white-10 flex items-center justify-center mr-3">
+                              <span class="font-semibold text-xs">USD</span>
+                            </div>
+                            <span>USD/ZAR</span>
+                          </div>
+                          <div class="text-right">
+                            <div class="font-medium">18.472</div>
+                            <div class="flex items-center text-red-400 text-xs">
+                              <svg class="w-4 h-4 mr-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 18 13.5 8.5 8.5 13.5 1 6"></polyline><polyline points="17 18 23 18 23 12"></polyline></svg>
+                              -0.21%
+                            </div>
+                          </div>
+                        </div>
+                        <div class="flex justify-between items-center py-2 border-b border-white-10">
+                          <div class="flex items-center">
+                            <div class="h-8 w-8 rounded-full bg-white-10 flex items-center justify-center mr-3">
+                              <span class="font-semibold text-xs">USD</span>
+                            </div>
+                            <span>USD/MXN</span>
+                          </div>
+                          <div class="text-right">
+                            <div class="font-medium">16.834</div>
+                            <div class="flex items-center text-green-400 text-xs">
+                              <svg class="w-4 h-4 mr-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
+                              +0.43%
+                            </div>
+                          </div>
+                        </div>
+                        <div class="flex justify-between items-center py-2 border-b border-white-10">
+                          <div class="flex items-center">
+                            <div class="h-8 w-8 rounded-full bg-white-10 flex items-center justify-center mr-3">
+                              <span class="font-semibold text-xs">USD</span>
+                            </div>
+                            <span>USD/TRY</span>
+                          </div>
+                          <div class="text-right">
+                            <div class="font-medium">32.164</div>
+                            <div class="flex items-center text-green-400 text-xs">
+                              <svg class="w-4 h-4 mr-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
+                              +0.76%
+                            </div>
+                          </div>
+                        </div>
+                        <div class="flex justify-between items-center py-2 border-b border-white-10">
+                          <div class="flex items-center">
+                            <div class="h-8 w-8 rounded-full bg-white-10 flex items-center justify-center mr-3">
+                              <span class="font-semibold text-xs">USD</span>
+                            </div>
+                            <span>USD/THB</span>
+                          </div>
+                          <div class="text-right">
+                            <div class="font-medium">34.975</div>
+                            <div class="flex items-center text-red-400 text-xs">
+                              <svg class="w-4 h-4 mr-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 18 13.5 8.5 8.5 13.5 1 6"></polyline><polyline points="17 18 23 18 23 12"></polyline></svg>
+                              -0.09%
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Crypto Tab Content -->
+                <div class="tab-pane hidden" id="crypto-tab">
+                  <div class="grid grid-cols-1 md-grid-cols-2 lg-grid-cols-3 gap-6">
+                    <div class="card hover:shadow-lg transition-shadow duration-300">
+                      <div class="flex justify-between items-center mb-4">
+                        <h3 class="font-bold">Major Coins</h3>
+                        <span class="text-xs text-white-70">Updated: <span class="font-semibold">12:35 GMT</span></span>
+                      </div>
+                      <div class="space-y-4">
+                        <div class="flex justify-between items-center py-2 border-b border-white-10">
+                          <div class="flex items-center">
+                            <div class="h-8 w-8 rounded-full bg-[#F7931A] flex items-center justify-center mr-3 text-white">
+                              <span class="font-semibold text-xs">₿</span>
+                            </div>
+                            <div>
+                              <div>Bitcoin</div>
+                              <div class="text-xs text-white-70">BTC</div>
+                            </div>
+                          </div>
+                          <div class="text-right">
+                            <div class="font-medium">$63,281</div>
+                            <div class="flex items-center text-red-400 text-xs">
+                              <svg class="w-4 h-4 mr-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 18 13.5 8.5 8.5 13.5 1 6"></polyline><polyline points="17 18 23 18 23 12"></polyline></svg>
+                              -1.25%
+                            </div>
+                          </div>
+                        </div>
+                        <div class="flex justify-between items-center py-2 border-b border-white-10">
+                          <div class="flex items-center">
+                            <div class="h-8 w-8 rounded-full bg-[#627EEA] flex items-center justify-center mr-3 text-white">
+                              <span class="font-semibold text-xs">Ξ</span>
+                            </div>
+                            <div>
+                              <div>Ethereum</div>
+                              <div class="text-xs text-white-70">ETH</div>
+                            </div>
+                          </div>
+                          <div class="text-right">
+                            <div class="font-medium">$3,084</div>
+                            <div class="flex items-center text-red-400 text-xs">
+                              <svg class="w-4 h-4 mr-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 18 13.5 8.5 8.5 13.5 1 6"></polyline><polyline points="17 18 23 18 23 12"></polyline></svg>
+                              -2.13%
+                            </div>
+                          </div>
+                        </div>
+                        <div class="flex justify-between items-center py-2 border-b border-white-10">
+                          <div class="flex items-center">
+                            <div class="h-8 w-8 rounded-full bg-[#000000] flex items-center justify-center mr-3 text-white">
+                              <span class="font-semibold text-xs">S</span>
+                            </div>
+                            <div>
+                              <div>Solana</div>
+                              <div class="text-xs text-white-70">SOL</div>
+                            </div>
+                          </div>
+                          <div class="text-right">
+                            <div class="font-medium">$149.12</div>
+                            <div class="flex items-center text-green-400 text-xs">
+                              <svg class="w-4 h-4 mr-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
+                              +3.46%
+                            </div>
+                          </div>
+                        </div>
+                        <div class="flex justify-between items-center py-2 border-b border-white-10">
+                          <div class="flex items-center">
+                            <div class="h-8 w-8 rounded-full bg-[#F0B90B] flex items-center justify-center mr-3 text-white">
+                              <span class="font-semibold text-xs">B</span>
+                            </div>
+                            <div>
+                              <div>Binance Coin</div>
+                              <div class="text-xs text-white-70">BNB</div>
+                            </div>
+                          </div>
+                          <div class="text-right">
+                            <div class="font-medium">$568.47</div>
+                            <div class="flex items-center text-green-400 text-xs">
+                              <svg class="w-4 h-4 mr-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
+                              +0.89%
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="card hover:shadow-lg transition-shadow duration-300">
+                      <div class="flex justify-between items-center mb-4">
+                        <h3 class="font-bold">Altcoins</h3>
+                        <span class="text-xs text-white-70">Updated: <span class="font-semibold">12:35 GMT</span></span>
+                      </div>
+                      <div class="space-y-4">
+                        <div class="flex justify-between items-center py-2 border-b border-white-10">
+                          <div class="flex items-center">
+                            <div class="h-8 w-8 rounded-full bg-[#345D9D] flex items-center justify-center mr-3 text-white">
+                              <span class="font-semibold text-xs">A</span>
+                            </div>
+                            <div>
+                              <div>Cardano</div>
+                              <div class="text-xs text-white-70">ADA</div>
+                            </div>
+                          </div>
+                          <div class="text-right">
+                            <div class="font-medium">$0.57</div>
+                            <div class="flex items-center text-red-400 text-xs">
+                              <svg class="w-4 h-4 mr-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 18 13.5 8.5 8.5 13.5 1 6"></polyline><polyline points="17 18 23 18 23 12"></polyline></svg>
+                              -0.82%
+                            </div>
+                          </div>
+                        </div>
+                        <div class="flex justify-between items-center py-2 border-b border-white-10">
+                          <div class="flex items-center">
+                            <div class="h-8 w-8 rounded-full bg-[#E6007A] flex items-center justify-center mr-3 text-white">
+                              <span class="font-semibold text-xs">D</span>
+                            </div>
+                            <div>
+                              <div>Polkadot</div>
+                              <div class="text-xs text-white-70">DOT</div>
+                            </div>
+                          </div>
+                          <div class="text-right">
+                            <div class="font-medium">$7.32</div>
+                            <div class="flex items-center text-green-400 text-xs">
+                              <svg class="w-4 h-4 mr-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
+                              +1.21%
+                            </div>
+                          </div>
+                        </div>
+                        <div class="flex justify-between items-center py-2 border-b border-white-10">
+                          <div class="flex items-center">
+                            <div class="h-8 w-8 rounded-full bg-[#D9D9D9] flex items-center justify-center mr-3 text-[#0033A0]">
+                              <span class="font-semibold text-xs">L</span>
+                            </div>
+                            <div>
+                              <div>Litecoin</div>
+                              <div class="text-xs text-white-70">LTC</div>
+                            </div>
+                          </div>
+                          <div class="text-right">
+                            <div class="font-medium">$82.45</div>
+                            <div class="flex items-center text-red-400 text-xs">
+                              <svg class="w-4 h-4 mr-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 18 13.5 8.5 8.5 13.5 1 6"></polyline><polyline points="17 18 23 18 23 12"></polyline></svg>
+                              -0.56%
+                            </div>
+                          </div>
+                        </div>
+                        <div class="flex justify-between items-center py-2 border-b border-white-10">
+                          <div class="flex items-center">
+                            <div class="h-8 w-8 rounded-full bg-[#E4A126] flex items-center justify-center mr-3 text-white">
+                              <span class="font-semibold text-xs">D</span>
+                            </div>
+                            <div>
+                              <div>Dogecoin</div>
+                              <div class="text-xs text-white-70">DOGE</div>
+                            </div>
+                          </div>
+                          <div class="text-right">
+                            <div class="font-medium">$0.12</div>
+                            <div class="flex items-center text-green-400 text-xs">
+                              <svg class="w-4 h-4 mr-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
+                              +5.67%
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="card hover:shadow-lg transition-shadow duration-300">
+                      <div class="flex justify-between items-center mb-4">
+                        <h3 class="font-bold">DeFi Tokens</h3>
+                        <span class="text-xs text-white-70">Updated: <span class="font-semibold">12:35 GMT</span></span>
+                      </div>
+                      <div class="space-y-4">
+                        <div class="flex justify-between items-center py-2 border-b border-white-10">
+                          <div class="flex items-center">
+                            <div class="h-8 w-8 rounded-full bg-[#2775CA] flex items-center justify-center mr-3 text-white">
+                              <span class="font-semibold text-xs">U</span>
+                            </div>
+                            <div>
+                              <div>Uniswap</div>
+                              <div class="text-xs text-white-70">UNI</div>
+                            </div>
+                          </div>
+                          <div class="text-right">
+                            <div class="font-medium">$9.48</div>
+                            <div class="flex items-center text-green-400 text-xs">
+                              <svg class="w-4 h-4 mr-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
+                              +2.14%
+                            </div>
+                          </div>
+                        </div>
+                        <div class="flex justify-between items-center py-2 border-b border-white-10">
+                          <div class="flex items-center">
+                            <div class="h-8 w-8 rounded-full bg-[#1BA27A] flex items-center justify-center mr-3 text-white">
+                              <span class="font-semibold text-xs">A</span>
+                            </div>
+                            <div>
+                              <div>Aave</div>
+                              <div class="text-xs text-white-70">AAVE</div>
+                            </div>
+                          </div>
+                          <div class="text-right">
+                            <div class="font-medium">$104.76</div>
+                            <div class="flex items-center text-red-400 text-xs">
+                              <svg class="w-4 h-4 mr-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 18 13.5 8.5 8.5 13.5 1 6"></polyline><polyline points="17 18 23 18 23 12"></polyline></svg>
+                              -1.34%
+                            </div>
+                          </div>
+                        </div>
+                        <div class="flex justify-between items-center py-2 border-b border-white-10">
+                          <div class="flex items-center">
+                            <div class="h-8 w-8 rounded-full bg-[#6F41D8] flex items-center justify-center mr-3 text-white">
+                              <span class="font-semibold text-xs">M</span>
+                            </div>
+                            <div>
+                              <div>Maker</div>
+                              <div class="text-xs text-white-70">MKR</div>
+                            </div>
+                          </div>
+                          <div class="text-right">
+                            <div class="font-medium">$2,831.92</div>
+                            <div class="flex items-center text-green-400 text-xs">
+                              <svg class="w-4 h-4 mr-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
+                              +0.78%
+                            </div>
+                          </div>
+                        </div>
+                        <div class="flex justify-between items-center py-2 border-b border-white-10">
+                          <div class="flex items-center">
+                            <div class="h-8 w-8 rounded-full bg-[#FF9900] flex items-center justify-center mr-3 text-white">
+                              <span class="font-semibold text-xs">S</span>
+                            </div>
+                            <div>
+                              <div>Sushi</div>
+                              <div class="text-xs text-white-70">SUSHI</div>
+                            </div>
+                          </div>
+                          <div class="text-right">
+                            <div class="font-medium">$1.24</div>
+                            <div class="flex items-center text-red-400 text-xs">
+                              <svg class="w-4 h-4 mr-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 18 13.5 8.5 8.5 13.5 1 6"></polyline><polyline points="17 18 23 18 23 12"></polyline></svg>
+                              -2.17%
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Commodities Tab Content -->
+                <div class="tab-pane hidden" id="commodities-tab">
+                  <div class="grid grid-cols-1 md-grid-cols-2 lg-grid-cols-3 gap-6">
+                    <div class="card hover:shadow-lg transition-shadow duration-300">
+                      <div class="flex justify-between items-center mb-4">
+                        <h3 class="font-bold">Precious Metals</h3>
+                        <span class="text-xs text-white-70">Updated: <span class="font-semibold">12:35 GMT</span></span>
+                      </div>
+                      <div class="space-y-4">
+                        <div class="flex justify-between items-center py-2 border-b border-white-10">
+                          <div class="flex items-center">
+                            <div class="h-8 w-8 rounded-full bg-[#FFD700] flex items-center justify-center mr-3 text-white">
+                              <span class="font-semibold text-xs">AU</span>
+                            </div>
+                            <div>
+                              <div>Gold</div>
+                              <div class="text-xs text-white-70">XAU/USD</div>
+                            </div>
+                          </div>
+                          <div class="text-right">
+                            <div class="font-medium">$2,317.30</div>
+                            <div class="flex items-center text-green-400 text-xs">
+                              <svg class="w-4 h-4 mr-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
+                              +0.45%
+                            </div>
+                          </div>
+                        </div>
+                        <div class="flex justify-between items-center py-2 border-b border-white-10">
+                          <div class="flex items-center">
+                            <div class="h-8 w-8 rounded-full bg-[#C0C0C0] flex items-center justify-center mr-3 text-white">
+                              <span class="font-semibold text-xs">AG</span>
+                            </div>
+                            <div>
+                              <div>Silver</div>
+                              <div class="text-xs text-white-70">XAG/USD</div>
+                            </div>
+                          </div>
+                          <div class="text-right">
+                            <div class="font-medium">$27.15</div>
+                            <div class="flex items-center text-green-400 text-xs">
+                              <svg class="w-4 h-4 mr-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
+                              +0.89%
+                            </div>
+                          </div>
+                        </div>
+                        <div class="flex justify-between items-center py-2 border-b border-white-10">
+                          <div class="flex items-center">
+                            <div class="h-8 w-8 rounded-full bg-[#B87333] flex items-center justify-center mr-3 text-white">
+                              <span class="font-semibold text-xs">PT</span>
+                            </div>
+                            <div>
+                              <div>Platinum</div>
+                              <div class="text-xs text-white-70">XPT/USD</div>
+                            </div>
+                          </div>
+                          <div class="text-right">
+                            <div class="font-medium">$971.65</div>
+                            <div class="flex items-center text-red-400 text-xs">
+                              <svg class="w-4 h-4 mr-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 18 13.5 8.5 8.5 13.5 1 6"></polyline><polyline points="17 18 23 18 23 12"></polyline></svg>
+                              -0.21%
+                            </div>
+                          </div>
+                        </div>
+                        <div class="flex justify-between items-center py-2 border-b border-white-10">
+                          <div class="flex items-center">
+                            <div class="h-8 w-8 rounded-full bg-[#E5E4E2] flex items-center justify-center mr-3 text-black">
+                              <span class="font-semibold text-xs">PD</span>
+                            </div>
+                            <div>
+                              <div>Palladium</div>
+                              <div class="text-xs text-white-70">XPD/USD</div>
+                            </div>
+                          </div>
+                          <div class="text-right">
+                            <div class="font-medium">$1,043.25</div>
+                            <div class="flex items-center text-green-400 text-xs">
+                              <svg class="w-4 h-4 mr-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
+                              +1.32%
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="card hover:shadow-lg transition-shadow duration-300">
+                      <div class="flex justify-between items-center mb-4">
+                        <h3 class="font-bold">Energy</h3>
+                        <span class="text-xs text-white-70">Updated: <span class="font-semibold">12:35 GMT</span></span>
+                      </div>
+                      <div class="space-y-4">
+                        <div class="flex justify-between items-center py-2 border-b border-white-10">
+                          <div class="flex items-center">
+                            <div class="h-8 w-8 rounded-full bg-[#000000] flex items-center justify-center mr-3 text-white">
+                              <span class="font-semibold text-xs">OIL</span>
+                            </div>
+                            <div>
+                              <div>Crude Oil</div>
+                              <div class="text-xs text-white-70">CL</div>
+                            </div>
+                          </div>
+                          <div class="text-right">
+                            <div class="font-medium">$82.69</div>
+                            <div class="flex items-center text-red-400 text-xs">
+                              <svg class="w-4 h-4 mr-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 18 13.5 8.5 8.5 13.5 1 6"></polyline><polyline points="17 18 23 18 23 12"></polyline></svg>
+                              -0.31%
+                            </div>
+                          </div>
+                        </div>
+                        <div class="flex justify-between items-center py-2 border-b border-white-10">
+                          <div class="flex items-center">
+                            <div class="h-8 w-8 rounded-full bg-[#4F81BD] flex items-center justify-center mr-3 text-white">
+                              <span class="font-semibold text-xs">OIL</span>
+                            </div>
+                            <div>
+                              <div>Brent Oil</div>
+                              <div class="text-xs text-white-70">BZ</div>
+                            </div>
+                          </div>
+                          <div class="text-right">
+                            <div class="font-medium">$86.45</div>
+                            <div class="flex items-center text-red-400 text-xs">
+                              <svg class="w-4 h-4 mr-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 18 13.5 8.5 8.5 13.5 1 6"></polyline><polyline points="17 18 23 18 23 12"></polyline></svg>
+                              -0.25%
+                            </div>
+                          </div>
+                        </div>
+                        <div class="flex justify-between items-center py-2 border-b border-white-10">
+                          <div class="flex items-center">
+                            <div class="h-8 w-8 rounded-full bg-[#92D050] flex items-center justify-center mr-3 text-white">
+                              <span class="font-semibold text-xs">NG</span>
+                            </div>
+                            <div>
+                              <div>Natural Gas</div>
+                              <div class="text-xs text-white-70">NG</div>
+                            </div>
+                          </div>
+                          <div class="text-right">
+                            <div class="font-medium">$2.124</div>
+                            <div class="flex items-center text-green-400 text-xs">
+                              <svg class="w-4 h-4 mr-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
+                              +1.54%
+                            </div>
+                          </div>
+                        </div>
+                        <div class="flex justify-between items-center py-2 border-b border-white-10">
+                          <div class="flex items-center">
+                            <div class="h-8 w-8 rounded-full bg-[#8064A2] flex items-center justify-center mr-3 text-white">
+                              <span class="font-semibold text-xs">HO</span>
+                            </div>
+                            <div>
+                              <div>Heating Oil</div>
+                              <div class="text-xs text-white-70">HO</div>
+                            </div>
+                          </div>
+                          <div class="text-right">
+                            <div class="font-medium">$2.574</div>
+                            <div class="flex items-center text-green-400 text-xs">
+                              <svg class="w-4 h-4 mr-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
+                              +0.19%
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="card hover:shadow-lg transition-shadow duration-300">
+                      <div class="flex justify-between items-center mb-4">
+                        <h3 class="font-bold">Agriculture</h3>
+                        <span class="text-xs text-white-70">Updated: <span class="font-semibold">12:35 GMT</span></span>
+                      </div>
+                      <div class="space-y-4">
+                        <div class="flex justify-between items-center py-2 border-b border-white-10">
+                          <div class="flex items-center">
+                            <div class="h-8 w-8 rounded-full bg-[#F2D68E] flex items-center justify-center mr-3 text-black">
+                              <span class="font-semibold text-xs">W</span>
+                            </div>
+                            <div>
+                              <div>Wheat</div>
+                              <div class="text-xs text-white-70">ZW</div>
+                            </div>
+                          </div>
+                          <div class="text-right">
+                            <div class="font-medium">621.25</div>
+                            <div class="flex items-center text-green-400 text-xs">
+                              <svg class="w-4 h-4 mr-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
+                              +0.32%
+                            </div>
+                          </div>
+                        </div>
+                        <div class="flex justify-between items-center py-2 border-b border-white-10">
+                          <div class="flex items-center">
+                            <div class="h-8 w-8 rounded-full bg-[#F7EC7D] flex items-center justify-center mr-3 text-black">
+                              <span class="font-semibold text-xs">C</span>
+                            </div>
+                            <div>
+                              <div>Corn</div>
+                              <div class="text-xs text-white-70">ZC</div>
+                            </div>
+                          </div>
+                          <div class="text-right">
+                            <div class="font-medium">450.75</div>
+                            <div class="flex items-center text-red-400 text-xs">
+                              <svg class="w-4 h-4 mr-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 18 13.5 8.5 8.5 13.5 1 6"></polyline><polyline points="17 18 23 18 23 12"></polyline></svg>
+                              -0.87%
+                            </div>
+                          </div>
+                        </div>
+                        <div class="flex justify-between items-center py-2 border-b border-white-10">
+                          <div class="flex items-center">
+                            <div class="h-8 w-8 rounded-full bg-[#6F4E37] flex items-center justify-center mr-3 text-white">
+                              <span class="font-semibold text-xs">KC</span>
+                            </div>
+                            <div>
+                              <div>Coffee</div>
+                              <div class="text-xs text-white-70">KC</div>
+                            </div>
+                          </div>
+                          <div class="text-right">
+                            <div class="font-medium">189.45</div>
+                            <div class="flex items-center text-green-400 text-xs">
+                              <svg class="w-4 h-4 mr-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
+                              +1.24%
+                            </div>
+                          </div>
+                        </div>
+                        <div class="flex justify-between items-center py-2 border-b border-white-10">
+                          <div class="flex items-center">
+                            <div class="h-8 w-8 rounded-full bg-[#FFFFFF] flex items-center justify-center mr-3 text-black">
+                              <span class="font-semibold text-xs">CT</span>
+                            </div>
+                            <div>
+                              <div>Cotton</div>
+                              <div class="text-xs text-white-70">CT</div>
+                            </div>
+                          </div>
+                          <div class="text-right">
+                            <div class="font-medium">81.54</div>
+                            <div class="flex items-center text-red-400 text-xs">
+                              <svg class="w-4 h-4 mr-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 18 13.5 8.5 8.5 13.5 1 6"></polyline><polyline points="17 18 23 18 23 12"></polyline></svg>
+                              -0.43%
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
         <!-- Testimonials Section -->
